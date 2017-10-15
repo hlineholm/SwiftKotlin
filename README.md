@@ -6,7 +6,7 @@
 
 ## TODO
 - Convert "fatalError()" to "throw Exception()"
-- Convert string interpolation - "\(variable)" to "$variable"
+- <strike>Convert string interpolation - "\(variable)" to "$variable"</strike>
 
 # SwiftKotlin
 
