@@ -4,6 +4,10 @@
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
 [![Twitter](https://img.shields.io/badge/twitter-@angelolloqui-blue.svg?maxAge=2592000)](http://twitter.com/angelolloqui)
 
+## TODO
+- Convert "fatalError()" to "throw Exception()"
+- Convert string interpolation - "\(variable)" to "$variable"
+
 # SwiftKotlin
 
 A tool to convert Swift code to Kotlin in a very easy and quick way.
@@ -22,7 +26,7 @@ It comes with a desktop Mac application to copy & paste your code, as well as a 
 ## Why use SwiftKotlin?
 
 ### Why Kotlin?
-Kotlin is a great language, it is to Android/Java what Swift is to iOS/Objective-C. It adds lots of great features while at the same time it keeps complete interop with Java, which means that you can combine them both together as you prefer. 
+Kotlin is a great language, it is to Android/Java what Swift is to iOS/Objective-C. It adds lots of great features while at the same time it keeps complete interop with Java, which means that you can combine them both together as you prefer.
 
 **If you are a Swift developer**, you will love Kotlin. It provides the most important Swift features (optionals, extensions, generics, lambdas,...) and a very similar syntax. You can check a [side by side comparison of Swift and Kotlin here](https://nilhcem.github.io/swift-is-like-kotlin/).
 
@@ -38,7 +42,7 @@ There are many alternatives for making multiplatform projects or sharing code be
 
 The main issue with all of them is that once you chose to use them, you need to keep in their boundaries, including specific tools and libraries, introducing a steep learning curve and a big risk in terms of dependency on that 3rd party. Besides that, for many of those options the resulting app will lack the quality of a fully native app.
 
-On the other hand, by using Kotlin, you will still have 2 fully native applications, with all the benefits (best quality, performance, best tools per platform -Xcode/Android Studio-, follow platform conventions,...), but at the same time minimize the extra work required to translate between them due to the similarity with Swift. 
+On the other hand, by using Kotlin, you will still have 2 fully native applications, with all the benefits (best quality, performance, best tools per platform -Xcode/Android Studio-, follow platform conventions,...), but at the same time minimize the extra work required to translate between them due to the similarity with Swift.
 
 In fact, [I explored an actual example using MVVM+Rx](http://angelolloqui.com/blog/38-Swift-vs-Kotlin-for-real-iOS-Android-apps), where I got between a 50% and 90% of code similarity depending on the layer (non UIKit dependent is much more reusable than UIKit dependent classes of course). It took me around 30% the time to convert the Android version from the iOS version and I did not have SwiftKotlin then ;)
 
@@ -96,7 +100,7 @@ The project comes with 2 executable targets:
 Checkout the [project's releases page](https://github.com/angelolloqui/SwiftKotlin/releases) to get a preview compiled version of the app or compile it manually:
 
 - Install Xcode 9+ and check it is the default selected one by running `xcode-select -p`
-- clone the repo: `git clone git@github.com:angelolloqui/SwiftKotlin.git; cd SwiftKotlin` and move to the ast branch `git checkout -b 'feature/swift-tranform' 'origin/feature/swift-transform'` 
+- clone the repo: `git clone git@github.com:angelolloqui/SwiftKotlin.git; cd SwiftKotlin` and move to the ast branch `git checkout -b 'feature/swift-tranform' 'origin/feature/swift-transform'`
 - Run `swift package update`
 - Open the project: `open SwiftKotlin.xcodeproj`
 
@@ -109,7 +113,7 @@ From Xcode, run the desired target and copy the generated executables in a direc
 ### Command line tool
 If you placed `swiftkotlin` in your any of your path directories, just run: `swiftkotlin [<file>] [--output path]`
 
-Note that you can specify a directory as input. Output will be default use the input directory, creating a `<name>.kt` file for each existing `<name>.swift` file found. 
+Note that you can specify a directory as input. Output will be default use the input directory, creating a `<name>.kt` file for each existing `<name>.swift` file found.
 
 
 ## License
